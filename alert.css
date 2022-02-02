@@ -1,0 +1,95 @@
+:root{
+    --primary-color: #6366f1;
+    --alert-color:#ef4444;
+    --warning-color:#fbbf24;
+}
+.alert-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap :0.5rem;
+}
+.alert-element{
+    width: 30%;
+   
+}
+
+/* On screens that are 992px or less */
+@media screen and (max-width: 992px) {
+    .alert-element{
+        width: 60%;
+    }
+  }
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+    .alert-element{
+        width: 90%;
+    }
+  }
+/* heading of alerts with white background color*/
+.alert-element:nth-child(1){
+    font-weight: bold;
+}
+/* alerts with white background color*/
+.alert-element:nth-child(2){
+    color: var(--alert-color);
+    border-radius: 0.1rem;
+    border: 0.1rem solid var(--alert-color);
+    padding: 1rem;
+}
+.alert-element:nth-child(3){
+    color: var(--warning-color);
+    border-radius: 0.1rem;
+    border: 0.1rem solid var(--warning-color);
+    padding: 1rem;
+}
+.alert-element:nth-child(4){
+    color: green;
+    border-radius: 0.1rem;
+    border: 0.1rem solid green;
+    padding: 1rem;
+}
+.alert-element:nth-child(5){
+    color: var(--primary-color);
+    border-radius: 0.1rem;
+    border: 0.1rem solid var(--primary-color);
+     padding: 1rem;
+}
+/* heading of alerts with colored background color*/
+.alert-element:nth-child(6){
+    font-weight: bold;
+}
+/* alerts with colored background colors and icons*/
+.alert-element:nth-child(7){
+    color: white;
+    background-color: var(--alert-color);
+    border-radius: 0.1rem;
+    border: 0.1rem solid var(--alert-color);
+    padding: 1rem;
+}
+.alert-element:nth-child(8){
+    color: white;
+    background-color: var(--warning-color);
+    border-radius: 0.1rem;
+    border: 0.1rem solid var(--warning-color);
+    padding: 1rem;
+}
+.alert-element:nth-child(9){
+    color: white;
+    background-color: green;
+    border-radius: 0.1rem;
+    border: 0.1rem solid green;
+    padding: 1rem;
+}
+.alert-element:nth-child(10){
+    color: white;
+    background-color: var(--primary-color);
+    border-radius: 0.1rem;
+    border: 0.1rem solid var(--primary-color);
+    padding: 1rem;
+}
