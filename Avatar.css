@@ -16,10 +16,7 @@ body{
 img{
     width: 5%;
 }
-.image-avatar:nth-child(1),
-.image-avatar:nth-child(2),
-.image-avatar:nth-child(3),
-.image-avatar:nth-child(4){
+.image-avatar{
     border-radius: 50%;
     border: 0.05rem solid black;
 }
