@@ -1,0 +1,25 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+.avatar-container{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    border: 0.01rem solid black;
+    max-width: 60%;
+}
+img{
+    width: 5%;
+}
+.image-avatar:nth-child(1),
+.image-avatar:nth-child(2),
+.image-avatar:nth-child(3),
+.image-avatar:nth-child(4){
+    border-radius: 50%;
+    border: 0.05rem solid black;
+}
