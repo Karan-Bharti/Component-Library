@@ -1,0 +1,29 @@
+
+.avatar.birds{
+    border-radius: 50%;
+    border: 0.05rem solid black;
+    margin: 1rem;
+    width: 6rem;
+    height: 6rem;
+}
+.avatar.minions{
+    border-radius: 50%;
+    border: 0.05rem solid black;
+    width: 6rem;
+    height: 6rem;
+    margin: 1rem;
+}
+.avatar.self{
+    border-radius: 50%;
+    border: 0.05rem solid black;
+    width: 4rem;
+    height: 4rem;
+    margin: 1rem;
+}
+.avatar.snapchat{
+    border-radius: 50%;
+    border: 0.05rem solid black;
+    width: 4rem;
+    height: 4rem;
+    margin: 1rem;
+}
