@@ -1,0 +1,80 @@
+:root{
+    --primary-color: #6366f1;
+    --alert-color:#ef4444;
+    --warning-color:#fbbf24;
+}
+
+.alert{
+    width: 30%;
+}
+
+/* On screens that are 992px or less */
+@media screen and (max-width: 992px) {
+    .alert{
+        width: 60%;
+    }
+  }
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+    .alert{
+        width: 80%;
+    }
+  }
+  /* alerts with white background color*/
+.alert.outline-error{
+    color:var(--alert-color) ;
+    background-color: white;
+    padding: 0.5rem;
+border-radius: 0.3rem;
+border: 0.1rem solid var(--alert-color);
+}
+.alert.outline-warning{
+    color:var(--warning-color) ;
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    border: 0.1rem solid var(--warning-color);
+}
+.alert.outline-success{
+    color:green ;
+   background-color: white;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    border: 0.1rem solid green;
+}
+
+.alert.outline-primary  {
+    color:var(--primary-color) ;
+background-color: white;
+padding: 0.5rem;
+border-radius: 0.3rem;
+border: 0.1rem solid var(--primary-color);
+}
+
+/* alerts with background color*/
+.alert.error{
+    background-color:var(--alert-color) ;
+    color: white;
+    padding: 0.5rem;
+border-radius: 0.3rem;
+}
+.alert.warning{
+    background-color:var(--warning-color) ;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+}
+.alert.success{
+    background-color:green ;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+}
+
+.alert.primary  {
+    background-color:var(--primary-color) ;
+color: white;
+padding: 0.5rem;
+border-radius: 0.3rem;
+}
