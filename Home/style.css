@@ -14,10 +14,10 @@ body {
       grid-area: 
       "header header header header header header"
       "h2 h2 h1 h1 .... ...."
-      "a .... p p p ...."
-      "a .... p p p ...."
-      "a .... p p p  ...."
-      "a .... p p p ...."
+      "a .... .... .... ....  ...."
+      "a .... .... .... .... ...."
+      "a .... .... .... ....  ...."
+      "a .... .... .... .... ...."
       "a .... .... .... .... ...."
       "a .... .... .... .... ...."
       "a .... .... .... .... ...."
@@ -176,26 +176,3 @@ a:hover,
 .drawer-snackbar:hover{
     color: var(--gray-button);
 }
-/* specific css for introduction page starts from here */
-h1{
-    grid-area: h1;
-    text-align: center;
-}
-p{
-  grid-area: h2;
-}
-.introduction{
-    grid-row: 2/3;
-    grid-column:3/5; 
-}
-.text{
-    grid-row: 3/5;
-    grid-column:3/6; 
-    
-    font-size: medium;
-} 
-.URL{
-    grid-row: 5/7;
-    grid-column:3/6; 
-   padding: 1rem;
-} 
