@@ -1,0 +1,177 @@
+:root {
+    --primary-color: #6366f1;
+    --gray-button: #9ca3af;
+    --text-background: #e5e7eb;
+  }
+  .wrapper{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-area: 
+      "header header header header header header"
+      "h2 h2 h1 h1 .... ...."
+      "a .... p p p ...."
+      "a .... p p p ...."
+      "a .... p p p  ...."
+      "a .... p p p ...."
+      "a .... .... .... .... ...."
+      "a .... .... .... .... ...."
+      "a .... .... .... .... ...."
+      "a .... .... .... .... ...."
+      "a .... .... .... .... ...." 
+      "a .... .... .... .... ...."
+      "footer footer footer footer footer footer" ;
+      gap: 1rem;
+  }
+  .header-bar{
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: rows;
+      background-color:var(--primary-color);
+      color:white ;
+      padding: 1rem;
+      gap: 2rem;
+      position: sticky;
+      top: 0rem;
+      grid-row: 1/2;
+      grid-column: 1/7;
+      width: 100%;
+  }
+  .brick-container:nth-child(1){
+      flex-grow:1;
+  }
+  a{
+      text-decoration: none;
+      color: white;
+      grid-area: a;
+  }
+  header{
+      grid-area: header;
+  }
+ 
+  h2{
+    grid-area: h2;
+    text-align: center;
+}
+  .footer-bar{
+      background-color: var(--primary-color);
+      text-align: center;
+      padding: 1rem;
+      position: sticky;
+      bottom: 0rem;
+      box-sizing: border-box;
+      grid-row: 12/13;
+      grid-column: 1/7;
+      width: 100%;
+  }
+  .social-links{
+   list-style-type:  none;
+   display: flex;
+  justify-content: center;
+  padding: 1rem;
+  gap: 2rem;
+  }
+  .footer-label{
+      color:white;
+  }
+  .heading-left-sidebar{
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+  .drawer-alert{
+      grid-row: 3/4;
+      grid-column: 1/2;
+      background-color: var(--gray-button);
+      text-align: center;
+      padding: 0.5rem;
+  }
+  .drawer-avatar{
+    grid-row: 4/5;
+    grid-column: 1/2;
+    background-color: var(--gray-button);
+    text-align: center;
+    padding: 0.5rem;
+}
+.drawer-badge{
+    grid-row: 5/6;
+    grid-column: 1/2;
+    background-color: var(--gray-button);
+    text-align: center;
+    padding: 0.5rem;
+}
+.drawer-button{
+    grid-row: 5/6;
+    grid-column: 1/2;
+    background-color: var(--gray-button);
+    text-align: center;
+    padding: 0.5rem;
+}
+.drawer-card{
+    grid-row: 6/7;
+    grid-column: 1/2;
+    background-color: var(--gray-button);
+    text-align: center;
+    padding: 0.5rem;
+}
+.drawer-image{
+    grid-row: 7/8;
+    grid-column: 1/2;
+    background-color: var(--gray-button);
+    text-align: center;
+    padding: 0.5rem;
+}
+.drawer-input{
+    grid-row: 8/9;
+    grid-column: 1/2;
+    background-color: var(--gray-button);
+    text-align: center;
+    padding: 0.5rem;
+}
+.drawer-grid{
+    grid-row: 9/10;
+    grid-column: 1/2;
+    background-color: var(--gray-button);
+    text-align: center;
+    padding: 0.5rem;
+}
+.drawer-snackbar{
+    grid-row: 10/11;
+    grid-column: 1/2;
+    background-color: var(--gray-button);
+    text-align: center;
+    padding: 0.5rem;
+}
+.drawer-lists{
+    grid-row: 11/12;
+    grid-column: 1/2;
+    background-color: var(--gray-button);
+    text-align: center;
+    padding: 0.5rem;
+}
+.URL{
+background-color: black;
+color: white;
+text-align: center;
+}
+/* specific css for introduction page starts from here */
+h1{
+    grid-area: h1;
+    text-align: center;
+}
+p{
+  grid-area: h2;
+}
+.introduction{
+    grid-row: 2/3;
+    grid-column:3/5; 
+}
+.text{
+    grid-row: 3/5;
+    grid-column:3/6; 
+    font-weight: bold;
+    font-size: larger;
+} 
+.URL{
+    grid-row: 5/7;
+    grid-column:3/6; 
+   padding: 1rem;
+} 
