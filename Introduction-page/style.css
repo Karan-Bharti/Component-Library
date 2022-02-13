@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body {
+
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+}
+:root {
+    --primary-color: #6366f1;
+    --gray-button: #9ca3af;
+  }
+  .wrapper{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-area: 
+      "header header header header header header"
+      "h2 h2 h1 .... .... ...."
+      "a .... p p p   ...."
+      "a .... p p p .... ...."
+      "a .... h2 .... ....    ...."
+      "a .... div div div ...."
+      "a .... div div div ...."
+      "a .... .... .... .... ...."
+      "a .... .... .... .... ...."
+      "a .... .... .... .... ...."
+      "a .... .... .... .... ...." 
+      "a .... .... .... .... ...."
+      "footer footer footer footer footer footer" ;
+      gap: 1rem;
+  }
+  .header-bar{
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: rows;
+      color:var(--primary-color);
+      padding: 3rem;
+      gap: 2rem;
+      position: sticky;
+      top: 0rem;
+      grid-row: 1/2;
+      grid-column: 1/7;
+      width: 100%;
+      background-color: white;
+  }
+  .brick-container{
+      font-weight: bold;
+  }
+  .brick-container:nth-child(1){
+      flex-grow:1;
+      font-size: larger;
+  }
+  a{
+      text-decoration: none;
+      color:var(--primary-color);
+      grid-area: a;
+  }
+  header{
+      grid-area: header;
+  }
+ 
+  h2{
+    grid-area: h2;
+    text-align: center;
+}
+  .footer-bar{
+      color: var(--primary-color);
+      text-align: center;
+      padding: 1rem;
+      position: sticky;
+      bottom: 0rem;
+      box-sizing: border-box;
+      grid-row: 12/13;
+      grid-column: 1/7;
+      width: 100%;
+      background-color: white;
+  }
+  .social-links{
+   list-style-type:  none;
+   display: flex;
+  justify-content: center;
+  padding: 1rem;
+  gap: 2rem;
+  }
+  .footer-label{
+      color:var(--primary-color);
+      font-weight: bold;
+  }
+  .heading-left-sidebar{
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+  .drawer-alert{
+      grid-row: 3/4;
+      grid-column: 1/2;
+      color: black;
+      text-align: center;
+      padding: 0.5rem;
+  }
+  .drawer-avatar{
+    grid-row: 4/5;
+    grid-column: 1/2;
+    color: black;
+    text-align: center;
+    padding: 0.5rem;
+}
+.drawer-badge{
+    grid-row: 5/6;
+    grid-column: 1/2;
+   color: black;
+    text-align: center;
+    padding: 0.5rem;
+}
+.drawer-button{
+    grid-row: 6/7;
+    grid-column: 1/2;
+    color: black;
+    text-align: center;
+    padding: 0.5rem;
+}
+.drawer-card{
+    grid-row: 7/8;
+    grid-column: 1/2;
+    color: black;
+    text-align: center;
+    padding: 0.5rem;
+}
+.drawer-image{
+    grid-row: 8/9;
+    grid-column: 1/2;
+    color: black;
+    text-align: center;
+    padding: 0.5rem;
+}
+.drawer-input{
+    grid-row: 9/10;
+    grid-column: 1/2;
+    color: black;
+    text-align: center;
+    padding: 0.5rem;
+}
+.drawer-grid{
+    grid-row: 10/11;
+    grid-column: 1/2;
+  color: black;
+    text-align: center;
+    padding: 0.5rem;
+}
+.drawer-snackbar{
+    grid-row: 11/12;
+    grid-column: 1/2;
+   color: black;
+    text-align: center;
+    padding: 0.5rem;
+}
+.drawer-lists{
+    grid-row: 12/13;
+    grid-column: 1/2;
+    color: black;
+    text-align: center;
+    padding: 0.5rem;
+}
+.URL{
+background-color: black;
+color: white;
+text-align: center;
+}
+a:hover,
+.drawer-alert:hover,
+.drawer-avatar:hover,
+.drawer-badge:hover,
+.drawer-button:hover,
+.drawer-card:hover,
+.drawer-grid:hover,
+.drawer-input:hover,
+.drawer-image:hover,
+.drawer-lists:hover,
+.drawer-snackbar:hover{
+    color: var(--gray-button);
+}
+/* specific css for intoduction page */
+p{
+    grid-area: p;
+}
+div{
+    grid-area: div;
+}
+.intro{
+    grid-row: 2/3;
+    grid-column: 3/4; 
+}
+.text{
+    grid-row: 3/5;
+    grid-column: 3/6; 
+}
+.install{
+    grid-row: 5/6;
+    grid-column: 3/4;
+    font-weight: bold;
+}
+.code-container {
+    grid-row: 6/8;
+    grid-column: 3/6;
+    background-color: black;
+    color:white;
+    padding: 1rem;;
+}
